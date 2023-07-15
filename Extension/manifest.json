@@ -31,7 +31,22 @@
         },
         {
             "matches": ["*://ilearn.mq.edu.au/course/view.php*"],
-            "js": ["/injection/js/collapse.js"]
+            "js": ["/injection/js/collapse.js", "/injection/js/uplevel.js"]
+        },
+        {
+            "matches": ["*://ilearn.mq.edu.au/*/*.php*"],
+            "include_globs": [  "*://*/mod/forum/*.php*", 
+                                "*://*/mod/page/*.php*",
+                                "*://*/mod/quiz/*.php*", 
+                                "*://*/mod/resource/*.php*", 
+                                "*://*/mod/turnitintooltwo/*.php*", 
+                                "*://*/mod/assign/*.php*", 
+                                "*://*/mod/workshop/*.php*", 
+                                "*://*/mod/chat/*.php*", 
+                                "*://*/mod/course/*.php*",
+                                "*://*/course/resources.php*",
+                                "*://*/grade/report/user/*.php*"],
+            "js": ["/injection/js/uplevel.js"]
         },
         {
             "matches": ["*://mq-edu-web.t1cloud.com/T1SMDefault/WebApps/eStudent/SM/StudyPlanDtls10.aspx*"],
